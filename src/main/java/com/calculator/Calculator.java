@@ -16,3 +16,5 @@ public class Calculator {
         System.out.println("Subtraction (5 - 3): " + calc.subtract(5, 3));
     }
 }
+
+// Automated CI Webhook Test
