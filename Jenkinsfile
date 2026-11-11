@@ -1,6 +1,15 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'Maven-3.10'
+        jdk 'JDK 25'
+    }
+
+    environment {
+        PATH = "C:\\Users\\Student-A\\apache-maven-3.9.9\\bin;${env.PATH}"
+    }
+
     stages {
         stage('SCM Synchronization') {
             steps {
